@@ -15,6 +15,6 @@ Pod::Spec.new do |spec|
   spec.dependency         'BerTlv', '~> 0.1.0'
   spec.dependency         'TDOAuth', '~> 1.0'
   spec.libraries        = 'PaynetEasyReader'
-  spec.xcconfig         = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PaynetEasyReader/PaynetEasyReader"' }
+  spec.xcconfig         = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PaynetEasyReader/Reader"' }
 end
 
