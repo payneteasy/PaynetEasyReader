@@ -39,6 +39,24 @@ typedef NS_ENUM(NSInteger, PaynetStatusType) {
 @property (copy, nonatomic, readonly) NSString *               responseCode;
 @property (copy, nonatomic, readonly) NSString *               emvIssueResponse;
 
+@property (copy, nonatomic, readonly) NSString *               terminalId;
+@property (copy, nonatomic, readonly) NSString *               paynetProcessingDate;
+@property (copy, nonatomic, readonly) NSString *               acquirerProcessingDate;
+@property (copy, nonatomic, readonly) NSString *               readerProcessingDate;
+@property (copy, nonatomic, readonly) NSString *               emvTerminalAid_9F06;
+@property (copy, nonatomic, readonly) NSString *               emvTvr_95;
+@property (copy, nonatomic, readonly) NSString *               emvAppLabel_50;
+@property (copy, nonatomic, readonly) NSString *               emvCvm_9F34;
+@property (copy, nonatomic, readonly) NSString *               emvPanSequence_5f34;
+@property (copy, nonatomic, readonly) NSString *               emvCid_9f27;
+@property (copy, nonatomic, readonly) NSString *               emvAppCryptogram_9f26;
+@property (copy, nonatomic, readonly) NSString *               cardholderName;
+@property (copy, nonatomic, readonly) NSString *               cardType;
+@property (copy, nonatomic, readonly) NSString *               lastFourDigits;
+@property (copy, nonatomic, readonly) NSString *               receiptId;
+@property (copy, nonatomic, readonly) NSString *               rrn;
+@property (copy, nonatomic, readonly) NSString *               authCode;
+
 
 - (id) initWithDictionary:(NSDictionary *)aDictionary;
 
