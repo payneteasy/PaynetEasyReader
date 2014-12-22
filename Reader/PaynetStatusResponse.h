@@ -17,6 +17,9 @@ typedef NS_ENUM(NSInteger, PaynetStatusResponseType) {
     , PaynetStatusResponseTypeUnknown            = 4
     // Network Error
     , PaynetStatusResponseTypeNetworkError       = 5
+
+    // Timeout
+    , PaynetStatusResponseTypeTimeout            = 6
 };
 
 typedef NS_ENUM(NSInteger, PaynetStatusType) {
@@ -61,6 +64,8 @@ typedef NS_ENUM(NSInteger, PaynetStatusType) {
 - (id) initWithDictionary:(NSDictionary *)aDictionary;
 
 - (id)initWithError:(NSError *)error;
+
+- (id)initWithErrorTimeout;
 
 - (id)initWithErrorStatusCode:(NSInteger)code;
 
