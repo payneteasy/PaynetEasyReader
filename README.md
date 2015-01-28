@@ -70,10 +70,11 @@ Starts Reader Manager
 ```obj-c
 PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
 PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA];
+// Note: manager must be a property or a field 
 manager = [factory createManager:reader
                           amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
                         currency:@"RUB"
                        presenter:self];
-    [manager start];
+[manager start];
 ```
 
