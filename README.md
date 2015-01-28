@@ -70,7 +70,7 @@ Starts Reader Manager
 ```obj-c
 PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
 PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA];
-// Note: manager must be a property or a field 
+// Note: manager must be a property or a field or a static local variable, to prevent an elimination
 manager = [factory createManager:reader
                           amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
                         currency:@"RUB"
