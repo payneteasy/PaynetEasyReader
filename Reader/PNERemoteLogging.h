@@ -10,6 +10,7 @@
                 , ...
 ;
 
++ (dispatch_queue_t)internalQueue;
 @end
 
 
