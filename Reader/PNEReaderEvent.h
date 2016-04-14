@@ -12,9 +12,12 @@ typedef NS_ENUM(NSInteger, PNEReaderState) {
     , PNEReaderState_CONNECTING
     , PNEReaderState_CONNECTED
     , PNEReaderState_NOT_CONNECTED
+
+    // MIURA STATUS
     , PNEReaderState_MIURA_DEVICE_INFO
     , PNEReaderState_MIURA_CARD_STATUS
     , PNEReaderState_MIURA_DEVICE_STATUS_CHANGE
+    , PNEReaderState_MIURA_BATTERY_STATUS_RESPONSE
 
 };
 
@@ -28,7 +31,6 @@ typedef NS_ENUM(NSInteger, PNEReaderState) {
 - (NSString *)description;
 
 + (instancetype)eventWithState:(PNEReaderState)aState;
-
 
 + (instancetype)eventWithState:(PNEReaderState)aState message:(id)aMessage;
 
