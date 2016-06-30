@@ -13,3 +13,5 @@ cp ../../ReaderIos/Pod/Classes/Private/Miura/Apdu/Response/MiuraResetDeviceRespo
 # Spire
 cp ../../ReaderIos/Pod/Classes/Private/Spire/Messages/Events/SpireStatusReport49Event.h .
 cp ../../ReaderIos/Pod/Classes/Private/Spire/Messages/Types/SpireStatusType.h .
+cp ../../ReaderIos/Pod/Classes/Private/Spire/Messages/Base/ISpireMessage.h .
+cp ../../ReaderIos/Pod/Classes/Private/Spire/Messages/Base/SpireEvent.h .
