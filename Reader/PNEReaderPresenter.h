@@ -10,6 +10,7 @@
 @class PNECard;
 @class PNECardError;
 @class PNEProcessingEvent;
+@class PNEConfigurationContinuation;
 
 @protocol PNEReaderPresenter <NSObject>
 
@@ -20,5 +21,7 @@
 - (void) onCardError:(PNECardError *)aError;
 
 - (void) onProcessingEvent:(PNEProcessingEvent *)aEvent;
+
+- (PNEConfigurationContinuation *) onConfiguration;
 
 @end

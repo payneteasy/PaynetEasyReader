@@ -11,10 +11,13 @@ typedef NS_ENUM(NSInteger, PaynetStatusResponseType) {
       PaynetStatusResponseTypeError              = 1
     // validation-error
     , PaynetStatusResponseTypeValidationError    = 2
+
     // status-response
     , PaynetStatusResponseTypeResponse           = 3
+
     // ???
     , PaynetStatusResponseTypeUnknown            = 4
+
     // Network Error
     , PaynetStatusResponseTypeNetworkError       = 5
 
@@ -36,7 +39,7 @@ typedef NS_ENUM(NSInteger, PaynetStatusType) {
 @property (      nonatomic, readonly) PaynetStatusType         status;
 @property (      nonatomic, readonly) NSInteger                errorCode;
 @property (copy, nonatomic, readonly) NSString *               errorMessage;
-@property (      nonatomic, readonly) NSUInteger               paynetOrderId;
+@property (      nonatomic, readonly) int64_t                  paynetOrderId;
 @property (copy, nonatomic, readonly) NSString *               merchantOrderId;
 @property (copy, nonatomic, readonly) NSString *               stage;
 @property (copy, nonatomic, readonly) NSString *               responseCode;

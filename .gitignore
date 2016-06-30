@@ -1,0 +1,14 @@
+.settings
+*.iml
+.project
+target
+.idea
+*~
+.DS_Store
+*xcuserdata/
+*.xccheckout
+automation_results
+Pods/
+*.xcworkspace/
+iOSInjectionProject/
+build/

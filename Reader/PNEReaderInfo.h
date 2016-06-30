@@ -9,8 +9,10 @@
 @interface PNEReaderInfo : NSObject
 
 typedef NS_ENUM(NSInteger, PNEReaderType) {
-    PNEReaderType_TEST
+      PNEReaderType_TEST
     , PNEReaderType_MIURA
+    , PNEReaderType_SPIRE
+    , PNEReaderType_MIURA_OR_SPIRE
 };
 
 @property (readonly, nonatomic) PNEReaderType type;

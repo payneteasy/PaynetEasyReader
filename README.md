@@ -24,13 +24,14 @@ Add to your Podfile
 pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git'
 ```
 
-### For Miura Shuttle
+### For Miura and Spire
 
 Add to your *-Info.plist
 ```xml
 <key>UISupportedExternalAccessoryProtocols</key>
   <array>
     <string>com.miura.shuttle</string>
+    <string>com.thyron</string>
   </array>
 ```
 
