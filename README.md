@@ -21,7 +21,7 @@ The PaynetEasyReader SDK includes header files and a single static library. We'l
 
 Add to your Podfile
 ```
-pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git'
+pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git', :tag => '0.2.2'
 ```
 
 ### For Miura and Spire
@@ -64,13 +64,23 @@ Implement protocol PNEReaderPresenter
     // wait for Result event
 }
 
+- (PNEConfigurationContinuation *)onConfiguration {
+    return [[PNEConfigurationContinuation alloc]
+            initWithBaseUrl:@"https://paynet-qa.clubber.me/paynet/rki"
+              merchantLogin:_payment.merchantLogin
+                merchantKey:_payment.merchantKey
+         merchantEndPointId:_payment.merchantEndPointId
+               merchantName:_payment.merchantName
+    ];
+}
+
 ```
 
 Starts Reader Manager
 
 ```obj-c
 PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
-PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA];
+PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_MIURA_OR_SPIRE];
 // Note: manager must be a property or a field or a static local variable, to prevent an elimination
 manager = [factory createManager:reader
                           amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
