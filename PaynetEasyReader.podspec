@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'PaynetEasyReader'
-  spec.version          = '0.2.3'
+  spec.version          = '0.2.5'
   spec.license          = { type: 'APACHE', file: 'LICENSE.txt' }
   spec.homepage         = 'https://www.payneteasy.com'
   spec.authors          = { 'PaynetEasyReader' => 'es@payneteasy.com' }
@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   #spec.frameworks      = 'UIKit'
   spec.dependency         'BerTlv', '~> 0.1.4'
   spec.dependency         'TDOAuth', '~> 1.0'
+  spec.dependency         'RemoteLogger', '0.1.1'
   spec.libraries        = 'PaynetEasyReader'
   spec.xcconfig         = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PaynetEasyReader/Reader"' }
 end
