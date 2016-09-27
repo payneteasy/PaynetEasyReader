@@ -3,6 +3,17 @@ PaynetEasyReader SDK for iOS
 
 PaynetEasyReader SDK provides fast, easy integration with mPOS readers in mobile apps.
 
+Supported mPOS
+--------------
+
+* Spire Payments
+ * SPm2
+ * SPm20
+* Miura Systems
+ * Miura Shuttle (M006)
+ * Miura 10 (M010)
+ * Miura 7 (M007)
+
 Instructions
 ------------
 
