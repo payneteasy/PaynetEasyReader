@@ -11,8 +11,8 @@ Supported mPOS
  * SPm20
 * Miura Systems
  * Miura Shuttle (M006)
- * Miura 10 (M010)
- * Miura 7 (M007)
+ * Miura M010
+ * Miura M007 
 
 Instructions
 ------------
