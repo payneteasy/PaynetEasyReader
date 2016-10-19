@@ -16,4 +16,7 @@
                                 amount:(NSDecimalNumber *)anAmount
                               currency:(NSString *)aCurrency
                              presenter:(id<PNEReaderPresenter>) aPresenter;
+
++(NSString *) sdkVersion;
+
 @end
