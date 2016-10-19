@@ -26,5 +26,6 @@ typedef NS_ENUM(NSInteger, PNEReaderType) {
 
 + (instancetype)infoWithType:(PNEReaderType)aType address:(NSString *)anAddress;
 
+- (NSString *)description;
 
 @end
