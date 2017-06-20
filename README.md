@@ -32,8 +32,9 @@ The PaynetEasyReader SDK includes header files and a single static library. We'l
 
 Add to your Podfile
 ```
-pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git', :tag => '0.2.2'
+pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git', :tag => '$VERSION'
 ```
+Please change $VERSION to the latest from the https://github.com/payneteasy/PaynetEasyReader/releases
 
 ### For Miura and Spire
 
