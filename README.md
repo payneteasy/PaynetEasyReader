@@ -1,7 +1,7 @@
 PaynetEasyReader SDK for iOS
 ============================
 
-PaynetEasyReader SDK provides fast, easy integration with mPOS readers in mobile apps.
+PaynetEasyReader SDK provides a fast and easy integration with mPOS terminals in your mobile apps.
 
 Supported mPOS
 --------------
@@ -14,21 +14,16 @@ Supported mPOS
  * Miura M010
  * Miura M007 
 
-Instructions
+Get Started
 ------------
 
-The PaynetEasyReader SDK includes header files and a single static library. We'll walk you through integration and usage.
-
-### Sign up for 
-
-* You'll need to contact to payneteasy.com for merchant login.
- 
+The PaynetEasyReader SDK includes header files and a single static library. We'll walk you through the integration and the usage.
 
 ### Requirements
 
 *   Supports target deployment of iOS version 7.0+ and instruction set armv7+ (including 64-bit), x86_64, i386 (for emulator).
 
-### Setup
+### Add the SDK to your project
 
 Add to your Podfile
 ```
@@ -49,7 +44,7 @@ Add to your *-Info.plist
 
 ### Sample Code
 
-Implement protocol PNEReaderPresenter
+Implement the PNEReaderPresenter protocol 
 ```obj-c
 
 - (void)stateChanged:(PNEReaderEvent *)aEvent {
@@ -85,7 +80,6 @@ Implement protocol PNEReaderPresenter
                merchantName:_payment.merchantName
     ];
 }
-
 ```
 
 Starts Reader Manager
@@ -101,3 +95,13 @@ manager = [factory createManager:reader
 [manager start];
 ```
 
+## Examples
+
+* Objective-c with Cocoapods - https://github.com/payneteasy/ReaderExample
+* Swift with Cocoapods - https://github.com/payneteasy/ReaderExampleSwiftCarthage
+* Swift with Carthage  - https://github.com/payneteasy/ReaderExampleSwiftCarthage
+
+## Sign up for your account 
+
+* You'll need to contact into@payneteasy.com for your merchant login.
+ 
