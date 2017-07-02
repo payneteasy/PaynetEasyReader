@@ -98,7 +98,7 @@ manager = [factory createManager:reader
 ## Examples
 
 * Objective-c with Cocoapods - https://github.com/payneteasy/ReaderExample
-* Swift with Cocoapods - https://github.com/payneteasy/ReaderExampleSwiftCarthage
+* Swift with Cocoapods - https://github.com/payneteasy/ReaderExampleSwift
 * Swift with Carthage  - https://github.com/payneteasy/ReaderExampleSwiftCarthage
 
 ## Sign up for your account 
