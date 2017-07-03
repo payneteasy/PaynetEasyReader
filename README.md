@@ -49,6 +49,7 @@ Implement the PNEReaderPresenter protocol
 
 - (void)stateChanged:(PNEReaderEvent *)aEvent {
    // displays reader status
+   // see an example at https://github.com/payneteasy/ReaderExample/blob/master/ReaderExample/PaymentModule/PaymentPresenter.m#L69
 }
 
 - (PNEProcessingContinuation *)onCard:(PNECard *)aCard {
@@ -64,11 +65,13 @@ Implement the PNEReaderPresenter protocol
 }
 
 - (void)onCardError:(PNECardError *)aError {
-    // deal with errors
+    // deal with the error
+    // see an example at https://github.com/payneteasy/ReaderExample/blob/master/ReaderExample/PaymentModule/PaymentPresenter.m#L93
 }
 
 - (void)onProcessingEvent:(PNEProcessingEvent *)aEvent {
     // wait for Result event
+    // see an example at https://github.com/payneteasy/ReaderExample/blob/master/ReaderExample/PaymentModule/PaymentPresenter.m#L96
 }
 
 - (PNEConfigurationContinuation *)onConfiguration {
