@@ -103,5 +103,5 @@ manager = [factory createManager:reader
 
 ## Sign up for your account 
 
-* You'll need to contact into@payneteasy.com for your merchant login.
+* Please contact info@payneteasy.com for your merchant account.
  
