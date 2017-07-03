@@ -14,6 +14,7 @@
 @property (copy, readonly, nonatomic) NSString *panLastDigits;
 @property (copy, readonly, nonatomic) NSString *cardHolderName;
 @property (      readonly, nonatomic) BOOL      pinEntered;
+@property (copy, readonly, nonatomic) NSString *terminalSerialNumber;
 
 - (instancetype)initWithScheme:(NSString *)aScheme
                    expiryYear2:(NSString *)expiryYear2
@@ -22,7 +23,9 @@
                 panFirstDigits:(NSString *)panFirstDigits
                  panLastDigits:(NSString *)panLastDigits
                 cardHolderName:(NSString *)cardHolderName
-                    pinEntered:(BOOL      )aPinEntered;
+                    pinEntered:(BOOL      )aPinEntered
+          terminalSerialNumber:(NSString *)aTerminalSerialNumber
+;
 
 - (NSString *)description;
 
