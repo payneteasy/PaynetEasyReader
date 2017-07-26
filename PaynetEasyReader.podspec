@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'PaynetEasyReader'
-  spec.version          = '0.2.17-s2'
+  spec.version          = '0.2.18'
   spec.license          = { type: 'APACHE', file: 'LICENSE.txt' }
   spec.homepage         = 'https://www.payneteasy.com'
   spec.authors          = { 'PaynetEasyReader' => 'es@payneteasy.com' }
