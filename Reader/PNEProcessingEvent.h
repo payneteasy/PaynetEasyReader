@@ -6,19 +6,28 @@
 
 @class PaynetStatusResponse;
 
-extern NSString *const PNEProcessingErrorDomain;
+typedef NS_ENUM(NSUInteger, PNEShouldGetSignature) {
 
-typedef NS_ENUM(NSUInteger, PNEProcessingErrorCode) {
+    /**
+     * Don't need to get signature
+     */
+    PNEShouldGetSignature_NO  = 0,
+
+    /**
+     * Get signature from the customer
+     */
+    PNEShouldGetSignature_YES = 1,
+
     /**
      * You should invoke this method only if type is PNEProcessingEventType_RESULT
      * and result.status is PaynetStatusTypeApproved
      */
-     PNEProcessingErrorCodeWrongState = 0,
+    PNEShouldGetSignature_ErrorWrongState = -1,
 
     /**
      * Couldn't parse 9F34 tag
      */
-     PNEProcessingErrorCode9434ParsingError = 1
+    PNEShouldGetSignature_Error9434Parsing = -2
 
 };
 
@@ -48,7 +57,7 @@ typedef NS_ENUM(NSInteger, PNEProcessingEventType) {
 
 - (instancetype)initWithResult:(PaynetStatusResponse *)aResult;
 
-- (BOOL) shouldGetSignature:(NSError **)aErrorPtr;
+- (PNEShouldGetSignature) shouldGetSignature;
 
 + (instancetype)eventWithResult:(PaynetStatusResponse *)aResult;
 
