@@ -13,6 +13,7 @@ typedef NS_ENUM(NSInteger, PNEReaderType) {
     , PNEReaderType_MIURA
     , PNEReaderType_SPIRE
     , PNEReaderType_MIURA_OR_SPIRE
+    , PNEReaderType_INPAS
 };
 
 @property (readonly, nonatomic) PNEReaderType type;
