@@ -72,6 +72,8 @@ typedef NS_ENUM(NSInteger, PaynetStatusType) {
 
 - (id)initWithErrorStatusCode:(NSInteger)code headers:(NSDictionary *)headers;
 
+- (NSDictionary *)dictionary;
+
 - (NSString *)description;
 
 
