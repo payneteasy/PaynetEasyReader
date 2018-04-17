@@ -9,10 +9,12 @@ Supported mPOS
 * Spire Payments
  * SPm2
  * SPm20
-* Miura Systems
+ * Miura Systems
  * Miura Shuttle (M006)
  * Miura M010
- * Miura M007 
+ * Miura M007
+ * Verifone Vx820
+ * PAX SP30
 
 Get Started
 ------------
