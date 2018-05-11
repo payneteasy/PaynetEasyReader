@@ -49,8 +49,8 @@ typedef NS_ENUM(NSInteger, PNEReaderState) {
     , PNEReaderState_SPIRE_STATUS_REPORT         // SpireStatusReport49Event
     , PNEReaderState_SPIRE_TERMINATE_TRANSACTION
     , PNEReaderState_SPIRE_INIT_TRANSACTION
-
-
+    
+    , PNEReaderState_SCANNING
 
 };
 

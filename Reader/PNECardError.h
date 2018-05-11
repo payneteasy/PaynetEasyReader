@@ -19,6 +19,8 @@ typedef NS_ENUM(NSInteger, PNECardErrorType) {
 
     , PNECardErrorType_ERROR_DOWNLOADING_CONFIGURATION   = 100 +  9
     , PNECardErrorType_NO_CONFIGURATION_CONTINUATION     = 100 + 10
+    , PNECardErrorType_AMOUNT_NOT_MATCHED_APPROVED       = 100 + 11
+    , PNECardErrorType_AMOUNT_NOT_MATCHED_DECLINED       = 100 + 12
 
     // see 6.24 START TRANSACTION:    SW1 = '9F' with SW2 = (See Table Below)
     // see 6.25 CONTINUE TRANSACTION: SW1 = '9F' with SW2 = (See Table Below)
