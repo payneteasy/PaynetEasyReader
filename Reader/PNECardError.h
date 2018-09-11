@@ -44,6 +44,7 @@ typedef NS_ENUM(NSInteger, PNECardErrorType) {
     , PNECardErrorType_NO_APPLICATIONS                   = 1000 + 0xC1 // No applications for the transaction conditions: Transaction should be performed using ICC or MSR
     , PNECardErrorType_TRANSACTION_NOT_POSSIBLE          = 1000 + 0xC2 // Transaction not possible: Transaction should be performed using ICC, MSR or another Card
     , PNECardErrorType_USE_ICC                           = 1000 + 0xC3 // The card asked for Chip interface: Transaction should be performed using ICC
+    , PNECardErrorType_TERMINAL_CONNECTION_LOST          = 1000 + 0xC4 // Connection to terminal is lost
     , PNECardErrorType_HARDWARE_ERROR                    = 1000 + 0xCF // Hardware error
 
 
