@@ -47,7 +47,6 @@ typedef NS_ENUM(NSInteger, PNECardErrorType) {
     , PNECardErrorType_TERMINAL_CONNECTION_LOST          = 1000 + 0xC4 // Connection to terminal is lost
     , PNECardErrorType_HARDWARE_ERROR                    = 1000 + 0xCF // Hardware error
 
-
 //    // 11.4 P2PE INITIALISE
 //    , PNECardErrorType_                   = 1000 + 0xE0 // System file/certificate missing.
 //    , PNECardErrorType_                   = 1000 + 0xE1 // Failed to generate RSA key
