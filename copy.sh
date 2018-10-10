@@ -3,6 +3,7 @@ cp ../../reader-ios/Pod/Classes/*.h .
 
 # Network
 cp ../../reader-ios/Pod/Classes/Private/Network/Messages/PaynetStatusResponse.h .
+cp ../../reader-ios/Pod/Classes/Private/Network/PaynetNetworkPinger.h .
 
 # Miura
 cp ../../reader-ios/Pod/Classes/Private/Miura/Apdu/Response/MiuraCardStatusMessage.h .
