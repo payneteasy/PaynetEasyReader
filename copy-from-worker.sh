@@ -2,7 +2,7 @@
 
 set -eux
 
-ID=40785
+ID=52930
 wget -O Reader/libPaynetEasyReader.a   http://paynet-qa.clubber.me/reader-ios/libPaynetEasyReader-${ID}.a
 wget -O PaynetEasyReader.framework.zip http://paynet-qa.clubber.me/reader-ios/PaynetEasyReader.framework-${ID}.zip
 
