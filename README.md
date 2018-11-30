@@ -14,7 +14,7 @@ Supported mPOS
  * Miura M010
  * Miura M007
  * Verifone Vx820
- * PAX SP30
+ * PAX SP30, D200
 
 Get Started
 ------------
@@ -33,7 +33,7 @@ pod "PaynetEasyReader", :git => 'git@github.com:evsinev/PaynetEasyReader.git', :
 ```
 Please change $VERSION to the latest from the https://github.com/payneteasy/PaynetEasyReader/releases
 
-### For Miura and Spire
+### For Miura, Spire and Pax
 
 Add to your *-Info.plist
 ```xml
@@ -41,6 +41,7 @@ Add to your *-Info.plist
   <array>
     <string>com.miura.shuttle</string>
     <string>com.thyron</string>
+    <string>com.paxsz.ipos</string>    
   </array>
 ```
 
