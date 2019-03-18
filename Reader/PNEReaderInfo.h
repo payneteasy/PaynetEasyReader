@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface PNEReaderInfo : NSObject
 
 typedef NS_ENUM(NSInteger, PNEReaderType) {
@@ -14,6 +13,8 @@ typedef NS_ENUM(NSInteger, PNEReaderType) {
     , PNEReaderType_SPIRE
     , PNEReaderType_MIURA_OR_SPIRE
     , PNEReaderType_INPAS
+    , PNEReaderType_EXT_ACCESSORY
+    , PNEReaderType_QRCODE
 };
 
 @property (readonly, nonatomic) PNEReaderType type;
