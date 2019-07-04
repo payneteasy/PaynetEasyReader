@@ -1,0 +1,6 @@
+framework module PaynetEasyReader {
+  umbrella header "PaynetEasyReader.h"
+
+  export *
+  module * { export * }
+}
