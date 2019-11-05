@@ -11,5 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = 'PaynetEasyReader.framework'
   spec.requires_arc     = true
   spec.source_files     = 'PaynetEasyReader.framework/Headers/*.h'
-  # spec.framework        = 'PaynetEasyReader'
+  spec.dependency         'BerTlv', '~> 0.1.4'
+  spec.dependency         'TDOAuth', '~> 1.0'
+  spec.dependency         'RemoteLogger', '0.1.3'
 end
