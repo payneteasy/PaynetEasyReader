@@ -93,6 +93,8 @@ typedef NS_ENUM(NSInteger, PNECardErrorType) {
 // since 0.2.0
 - (instancetype)initWithType:(PNECardErrorType)aType error:(NSError *)aError;
 
+- (instancetype)initWithType:(PNECardErrorType)type errorMessage:(NSString *)errorMessage error:(NSError *)error;
+
 - (NSString *)description;
 
 @end

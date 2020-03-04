@@ -8,9 +8,13 @@
 @interface PNEConfigurationContinuation : NSObject <NSCopying, NSCoding>
 
 /**
- * reader configuration service base url. For example: https://gate.payneteasy.com/rki-proxy
+ * reader configuration service base url. For example: https://gate.payneteasy.com/rki
  */
-@property (nonatomic, readonly, copy) NSString *baseUrl;
+@property (nonatomic, readonly, copy) NSString *baseRkiUrl;
+/**
+ * reader processing service base url. For example: https://gate.payneteasy.com/paynet
+ */
+@property (nonatomic, readonly, copy) NSString *baseProcessingUrl;
 /**
  * merchant login
  */
@@ -28,7 +32,7 @@
  */
 @property (nonatomic, readonly, copy) NSString *merchantName;
 
-- (instancetype)initWithBaseUrl:(NSString *)baseUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName;
+- (instancetype)initWithBaseRkiUrl:(NSString *)baseRkiUrl baseProcessingUrl:(NSString *)baseProcessingUrl merchantLogin:(NSString *)merchantLogin merchantKey:(NSString *)merchantKey merchantEndPointId:(int64_t)merchantEndPointId merchantName:(NSString *)merchantName;
 
 @end
 

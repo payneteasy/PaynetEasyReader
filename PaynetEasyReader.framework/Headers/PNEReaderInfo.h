@@ -15,10 +15,14 @@ typedef NS_ENUM(NSInteger, PNEReaderType) {
     , PNEReaderType_INPAS
     , PNEReaderType_EXT_ACCESSORY
     , PNEReaderType_QRCODE
+    , PNEReaderType_HTTP
 };
 
 @property (readonly, nonatomic) PNEReaderType type;
 @property (readonly, copy, nonatomic) NSString *address;
+@property (readonly, copy, nonatomic) NSString *deviceId;
+
+- (instancetype)initWithType:(PNEReaderType)aType address:(NSString *)anAddress deviceId:(NSString *)aDeviceId;
 
 - (instancetype)initWithType:(PNEReaderType)aType address:(NSString *)anAddress;
 
@@ -27,6 +31,8 @@ typedef NS_ENUM(NSInteger, PNEReaderType) {
 + (instancetype)infoWithType:(PNEReaderType)aType;
 
 + (instancetype)infoWithType:(PNEReaderType)aType address:(NSString *)anAddress;
+
++ (instancetype)infoWithType:(PNEReaderType)aType address:(NSString *)anAddress deviceId:(NSString *)aDeviceId;
 
 - (NSString *)description;
 

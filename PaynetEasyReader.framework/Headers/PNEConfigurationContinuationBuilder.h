@@ -10,7 +10,9 @@
 
 - (PNEConfigurationContinuation *)build;
 
-- (instancetype)withBaseUrl:(NSString *)baseUrl;
+- (instancetype)withBaseRkiUrl:(NSString *)baseRkiUrl;
+
+- (instancetype)withBaseProcessingUrl:(NSString *)baseProcessingUrl;
 
 - (instancetype)withMerchantLogin:(NSString *)merchantLogin;
 

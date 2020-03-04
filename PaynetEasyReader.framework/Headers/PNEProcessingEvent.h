@@ -45,6 +45,9 @@ typedef NS_ENUM(NSInteger, PNEProcessingEventType) {
     , PNEProcessingEventType_ADVICE_SENDING
     , PNEProcessingEventType_ADVICE_RESPONSE_WAITING
     , PNEProcessingEventType_RESULT
+    , PNEProcessingEventType_ERROR_BAD_CREDENTIALS
+    , PNEProcessingEventType_REVERSAL_SENDING
+    , PNEProcessingEventType_REVERSAL_RESPONSE_WAITING
 };
 
 @property (readonly, nonatomic) PNEProcessingEventType type;
