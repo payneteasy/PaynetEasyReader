@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc     = true
   spec.source_files     = 'PaynetEasyReader.framework/Headers/*.h'
   spec.dependency         'BerTlv', '~> 0.2'
-  spec.dependency         'evsinev/TDOAuth', '~> 1.0'
+  spec.dependency         'TDOAuth', '~> 1.0'
   spec.dependency         'RemoteLogger', '~> 0.1'
 end
