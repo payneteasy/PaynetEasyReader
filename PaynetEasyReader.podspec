@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'PaynetEasyReader'
-  spec.version          = '0.2.32-3'
+  spec.version          = '0.2.32-4'
   spec.license          = { type: 'APACHE', file: 'LICENSE.txt' }
   spec.homepage         = 'https://www.payneteasy.com'
   spec.authors          = { 'PaynetEasyReader' => 'es@payneteasy.com' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = 'PaynetEasyReader.framework'
   spec.requires_arc     = true
   spec.source_files     = 'PaynetEasyReader.framework/Headers/*.h'
-  spec.dependency         'BerTlv', '~> 0.1.4'
-  spec.dependency         'TDOAuth', '~> 1.0'
-  spec.dependency         'RemoteLogger', '0.1.3'
+  spec.dependency         'BerTlv', '~> 0.2'
+  spec.dependency         'evsinev/TDOAuth', '~> 1.0'
+  spec.dependency         'RemoteLogger', '~> 0.1'
 end
