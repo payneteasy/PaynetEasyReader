@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                    = 'PaynetEasyReader'
-  spec.version                 = '0.2.32-7'
+  spec.version                 = '0.2.32-8'
   spec.license                 = { type: 'APACHE', file: 'LICENSE.txt' }
   spec.homepage                = 'https://www.payneteasy.com'
   spec.authors                 = { 'PaynetEasyReader' => 'es@payneteasy.com' }
@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target   = '12.0'
   spec.swift_version           = '4.1'
   spec.requires_arc            = true
+  spec.source_files            = 'Headers/*.h'
   spec.dependency              'BerTlv', '~> 0.2'
   spec.dependency              'TDOAuth', '~> 1.0'
   spec.dependency              'RemoteLogger', '~> 0.1'
