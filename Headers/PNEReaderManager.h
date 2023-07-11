@@ -7,7 +7,11 @@
 
 @protocol PNEReaderManager <NSObject>
 
-- (void) start;
-- (void) stop;
+- (void)start;
+- (void)stop;
+
+- (void)cancelPayment;
+- (void)returnPayment;
+- (void)reconciliation;
 
 @end

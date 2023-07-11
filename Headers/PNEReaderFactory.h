@@ -9,14 +9,22 @@
 @class PNEReaderInfo;
 @protocol PNEReaderPresenter;
 
-
 @interface PNEReaderFactory : NSObject
 
-- (id<PNEReaderManager>) createManager:(PNEReaderInfo *)aReader
-                                amount:(NSDecimalNumber *)anAmount
-                              currency:(NSString *)aCurrency
-                             presenter:(id<PNEReaderPresenter>) aPresenter;
+- (id<PNEReaderManager>)createManager:(PNEReaderInfo *)aReader
+                            presenter:(id<PNEReaderPresenter>)aPresenter;
 
-+(NSString *) sdkVersion;
+- (id<PNEReaderManager>)createManager:(PNEReaderInfo *)aReader
+                               amount:(NSDecimalNumber *)anAmount
+                             currency:(NSString *)aCurrency
+                            presenter:(id<PNEReaderPresenter>)aPresenter;
+
+- (id<PNEReaderManager>)createManager:(PNEReaderInfo *)aReader
+                               amount:(NSDecimalNumber *)anAmount
+                             currency:(NSString *)aCurrency
+                                  rrn:(NSString *)aRRN
+                            presenter:(id<PNEReaderPresenter>)aPresenter;
+
++ (NSString *)sdkVersion;
 
 @end

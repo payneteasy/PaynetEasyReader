@@ -54,9 +54,11 @@ typedef NS_ENUM(NSInteger, PNEProcessingEventType) {
 @property (copy, readonly, nonatomic) NSString * errorMessage;
 @property (copy, readonly, nonatomic) PaynetStatusResponse * result;
 
+- (instancetype)initWithType:(PNEProcessingEventType)aType;
+
 - (instancetype)initWithType:(PNEProcessingEventType)aType errorMessage:(NSString *)anErrorMessage;
 
-- (instancetype)initWithType:(PNEProcessingEventType)aType;
+- (instancetype)initWithType:(PNEProcessingEventType)aType result:(PaynetStatusResponse *)aResult errorMessage:(NSString *)anErrorMessage;
 
 - (instancetype)initWithResult:(PaynetStatusResponse *)aResult;
 
@@ -64,9 +66,9 @@ typedef NS_ENUM(NSInteger, PNEProcessingEventType) {
 
 + (instancetype)eventWithResult:(PaynetStatusResponse *)aResult;
 
++ (instancetype)eventWithResult:(PaynetStatusResponse *)aResult errorMessage:(NSString *)anErrorMessage;
 
 + (instancetype)eventWithType:(PNEProcessingEventType)aType;
-
 
 + (instancetype)eventWithType:(PNEProcessingEventType)aType errorMessage:(NSString *)anErrorMessage;
 
