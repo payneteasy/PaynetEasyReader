@@ -101,6 +101,51 @@ manager = [factory createManager:reader
 [manager start];
 ```
 
+```obj-c
+PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
+PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_INPAS address:@"10.0.0.100:27015"];
+manager = [factory createManager:reader
+                          amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
+                        currency:@"RUB"
+                       presenter:self];
+[manager start];
+```
+
+Cancel Payment
+
+```obj-c
+PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
+PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_INPAS address:@"10.0.0.100:27015"];
+manager = [factory createManager:reader
+                          amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
+                        currency:@"RUB",
+                             rrn:@"1234567890",
+                       presenter:self];
+[manager cancelPayment];
+```
+
+Return Payment
+
+```obj-c
+PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
+PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_INPAS address:@"10.0.0.100:27015"];
+manager = [factory createManager:reader
+                          amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]
+                        currency:@"RUB",
+                             rrn:@"1234567890",
+                       presenter:self];
+[manager returnPayment];
+```
+
+Reconciliation
+
+```obj-c
+PNEReaderFactory *factory = [[PNEReaderFactory alloc] init];
+PNEReaderInfo *reader = [PNEReaderInfo infoWithType:PNEReaderType_INPAS address:@"10.0.0.100:27015"];
+manager = [factory createManager:reader presenter:self];
+[manager reconciliation];
+```
+
 ## Examples
 
 * Objective-c with Cocoapods - https://github.com/payneteasy/ReaderExample
